@@ -17,7 +17,7 @@ const Projects = forwardRef(({ projectRef }) => {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p className="justify-content-center d-flex " style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects{" I've"} worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">

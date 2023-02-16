@@ -22,7 +22,7 @@ function Banner() {
                 </h1>
 
                 <h1 className="heading-name">
-                  I'M
+                  {"I'M"}
                   <strong className="main-name"> Noor ullah </strong>
                 </h1>
               </div>
