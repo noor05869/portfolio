@@ -17,6 +17,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPage from "./pages/LandingPage";
 import Loader from "./components/Loader";
+import Header from "./components/NavBar";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -33,7 +34,8 @@ function App() {
     <Router>
       <Loader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <NavBar />
+        {/* <NavBar /> */}
+        <Header />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<LandingPage />} />

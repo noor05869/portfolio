@@ -16,7 +16,7 @@ import {
 
 import { CgFileDocument } from "react-icons/cg";
 
-function NavBar() {
+const Header = () => {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -107,6 +107,12 @@ function NavBar() {
       </Container>
     </Navbar>
   );
-}
+};
 
-export default NavBar;
+export default Header;
+
+// function NavBar() {
+
+// }
+
+// export default NavBar;
