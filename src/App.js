@@ -13,7 +13,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPage from "./pages/LandingPage";
-import Loader from "./components/Loader";
+import LoaderCom from "./components/LoaderCom";
 import Header from "./components/NavBar";
 import Footer from "./components/Footer";
 
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <Router>
-      <Loader load={load} />
+      <LoaderCom load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         {/* <NavBar /> */}
         <Header />

@@ -1,7 +1,7 @@
 import React from "react";
 import { Watch } from "react-loader-spinner";
 
-const Loader = (props) => {
+const LoaderCom = (props) => {
   return (
     <>
       {props.load && (
@@ -22,4 +22,4 @@ const Loader = (props) => {
   );
 };
 
-export default Loader;
+export default LoaderCom;
