@@ -1,5 +1,6 @@
 import React from "react";
 import { Watch } from "react-loader-spinner";
+
 function Pre(props) {
   return (
     <>
@@ -21,4 +22,5 @@ function Pre(props) {
   )
 }
 
-export default Pre;
+export default Pre
+
