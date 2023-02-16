@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import {
   BrowserRouter as Router,
@@ -17,6 +16,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPage from "./pages/LandingPage";
 import Loader from "./components/Loader";
 import Header from "./components/NavBar";
+import Footer from "./components/Footer";
 
 function App() {
   const [load, upadateLoad] = useState(true);
