@@ -20,7 +20,6 @@ function Pre(props) {
         </div>
       }
     </>
-    // <div id={props.load ? "preloader" : "preloader-none"}></div>;
   )
 }
 
