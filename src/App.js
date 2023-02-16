@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
+import NavBar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
@@ -33,7 +33,7 @@ function App() {
     <Router>
       <Loader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
+        <NavBar />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
