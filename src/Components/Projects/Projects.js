@@ -91,5 +91,5 @@ const Projects = forwardRef(({ projectRef }) => {
     </Container>
   );
 })
-
+Projects.displayName = "Projects";
 export default Projects;
