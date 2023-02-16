@@ -20,15 +20,15 @@ const Header = () => {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
+  // function scrollHandler() {
+  //   if (window.scrollY >= 20) {
+  //     updateNavbar(true);
+  //   } else {
+  //     updateNavbar(false);
+  //   }
+  // }
 
-  window.addEventListener("scroll", scrollHandler);
+  // window.addEventListener("scroll", scrollHandler);
 
   return (
     <Navbar
@@ -91,17 +91,6 @@ const Header = () => {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -110,9 +99,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// function NavBar() {
-
-// }
-
-// export default NavBar;
