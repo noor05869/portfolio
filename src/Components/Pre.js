@@ -1,8 +1,6 @@
 import React from "react";
 import { Watch } from "react-loader-spinner";
 function Pre(props) {
-
-
   return (
     <>
       {props.load &&
