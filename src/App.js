@@ -9,7 +9,6 @@ import {
   Routes,
   Navigate
 } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -35,7 +34,6 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         {/* <NavBar /> */}
         <Header />
-        <ScrollToTop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/project" element={<Projects />} />
