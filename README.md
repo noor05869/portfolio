@@ -1,57 +1,76 @@
-# PAPA React JS Resume Starter Pack and Digital Portfolio
+<h2 align="center">
+  Portfolio Website - v2.0<br/>
+  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
+</h2>
+<div align="center">
+  <img alt="Demo" src="./Images/readme-img1.png" />
+</div>
 
-![PAPA React JS Portfolio Starter Pack](resume-screenshot.jpg?raw=true "PAPA React JS Portfolio Stater Pack ")
+<br/>
 
-### <a href="https://resume-portfolio-starter-pack.herokuapp.com">LIVE DEMO</a>
+<center>
 
-## Resume Starter Pack Description
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
+![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
+![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
 
-This portfolio starter pack is made using React. The data on the portfolio is directly linked to a JSON file. Any changes to the portfolio can be made in the JSON file. The changes will then be reflected on to the portfolio. This allows you to customize your own personal portfolio that can be used for applying to jobs or other personal uses.
+</center>
 
-## 1. Make sure you have NODE installed!
+<h3 align="center">
+    🔹
+    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
+    🔹
+    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
+</h3>
 
-Firstly, you will need to download the latest version of Node by <a href="https://nodejs.org/en/download/">CLICKING HERE</a>
+## TL;DR
 
-## 2. Clone the repo!
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
 
-Next, you will need to run the following command in the Terminal to clone the repo onto your machine.
+## Built With
 
-```git clone https://github.com/sonnysangha/Resume-Portfolio-Starter-pack.git```
+My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
-## 3. Install Dependancies
+This project was built using these technologies.
 
-Next, you need to install all the dependancies using:
+- React.js
+- Node.js
+- Express.js
+- CSS3
+- VsCode
+- Vercel
 
-```npm install```
+## Features
 
-Once this is done, you can start the app with:
+**📖 Multi-Page Layout**
 
-```npm start```
+**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
 
-## 4. Fill in your personal info
+**📱 Fully Responsive**
 
-To populate the website with all of your own data, open the public/resumeData.json file and simply replace the data in there with your own. Images for the porfolio section are to be put in the public/images/portfolio folder.
+## Getting Started
 
-## 5. (OPTIONAL) Replacing images and/or fonts
+Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
 
-If you want to display your own pictures then you have to replace the files at these locations: public/images/header-background.jpg, public/images/testimonials-bg.jpg and public/favicon.ico. FILE NAMES MUST NOT BE CHANGED else the code referencing these images will no longer work.
+## 🛠 Installation and Setup Instructions
 
-## 7. Finalising Resume
+1. Installation: `npm install`
 
-Once all the formatting and data input is finalised, run `npm run build`. This will create a dedicated build folder.
+2. In the project directory, you can run: `npm start`
 
-## 8. Host Resume Online
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The page will reload if you make edits.
 
-1) Open the build folder in the finder screen
-2) Go to <a href="https://www.netlify.com/">Netlify</a> and set up a profile
-3) Go to the 'Sites Tab'
-4) Simply Drag and drop the 'Build' Folder into the designated upload space
-5) The app will begin deploying & the deployment URL will be presented!
+## Usage Instructions
 
-🚀 BOOM, you are now LIVE!!!
+Open the project folder and Navigate to `/src/components/`. <br/>
+You will find all the components used and you can edit your information accordingly.
 
-## Credits
+### Show your support
 
-##### Original Idea
+Give a ⭐ if you like this website!
 
-<a href="https://github.com/tbakerx/react-resume-template/blob/master/README.md">Inspiration from Tim Baker (tbakerx)</a>
+<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
