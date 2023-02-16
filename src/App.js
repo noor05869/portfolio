@@ -13,9 +13,9 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPage from "./pages/LandingPage";
-import LoaderCom from "./components/LoaderCom";
 import Header from "./components/NavBar";
 import Footer from "./components/Footer";
+import LoaderCom from "./components/LoaderCom";
 
 function App() {
   const [load, upadateLoad] = useState(true);
