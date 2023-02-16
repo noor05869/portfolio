@@ -2,13 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-import Header from '../components/Header'
-import Banner from '../components/Home/Banner'
-import Projects from '../components/Projects/Projects'
-import About from '../components/About/About'
-import Contact from '../components/contact/Contact'
-import Footer from '../components/Footer'
+
 import { useRef } from 'react'
+import { About, Banner, Contact, Footer, Header, Projects } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 

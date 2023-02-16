@@ -1,0 +1,6 @@
+export { default as Header } from "./Header"
+export { default as About } from "./About/About"
+export { default as Projects } from "./Projects/Projects"
+export { default as Banner } from "./Home/Banner"
+export { default as Contact } from "./contact/Contact"
+export { default as Footer } from "./Footer"
