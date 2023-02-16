@@ -13,7 +13,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPage from "./pages/LandingPage";
-import Header from "./components/NavBar";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import LoaderCom from "./components/LoaderCom";
 
