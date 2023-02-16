@@ -1,20 +1,19 @@
+import Image from "next/image";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import homeLogo from "../../Assets/home-main.svg";
-import carbon from "../../Assets/carbon.svg"
-import Particle from "../Particle";
+import carbon from "../../Assets/carbon.svg";
 import Home2 from "./Home2";
 import Type from "./Type";
 
-function Home() {
+function Banner() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        {/* <Particle /> */}
         <Container className="home-content ">
           <Row className=" justify-content-center align-items-center">
             <Col className="home-header ">
-              <div >
+              <div>
                 <h1 style={{ paddingBottom: 15 }} className="heading">
                   Hi There!{" "}
                   <span className="wave" role="img" aria-labelledby="wave">
@@ -33,9 +32,8 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
+              <Image
                 src={carbon}
-                alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />
@@ -48,4 +46,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Banner;

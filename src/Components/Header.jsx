@@ -1,14 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/nlogo2.png";
-import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+import { Link } from "next/link";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -16,20 +11,21 @@ import {
 
 import { CgFileDocument } from "react-icons/cg";
 
-const Header = () => {
+const Header = ({ aboutScroll, projectScroll }) => {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  // function scrollHandler() {
-  //   if (window.scrollY >= 20) {
-  //     updateNavbar(true);
-  //   } else {
-  //     updateNavbar(false);
-  //   }
-  // }
-
-  // window.addEventListener("scroll", scrollHandler);
-
+  function scrollHandler() {
+    if (window.scrollY >= 20) {
+      updateNavbar(true);
+    } else {
+      updateNavbar(false);
+    }
+  }
+  useEffect(() => {
+    // Client-side-only code
+    window.addEventListener("scroll", scrollHandler);
+  }, [navColour]);
   return (
     <Navbar
       expanded={expand}
@@ -59,7 +55,7 @@ const Header = () => {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            <Nav.Item onClick={aboutScroll}>
               <Nav.Link
                 as={Link}
                 to="/about"
@@ -69,7 +65,7 @@ const Header = () => {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            <Nav.Item onClick={projectScroll}>
               <Nav.Link
                 as={Link}
                 to="/project"
@@ -82,7 +78,7 @@ const Header = () => {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/resume"
@@ -90,7 +86,7 @@ const Header = () => {
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

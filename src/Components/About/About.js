@@ -1,16 +1,17 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
+// import Particle from "../Particle";
 import programmer from "../../Assets/programmer.jpg"
-import Github from "./Github";
+// import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import Image from "next/image";
 
-function About() {
+const About = forwardRef(({ aboutRef }) => {
   return (
-    <Container fluid className="about-section">
+    <Container ref={aboutRef} fluid className="about-section">
       {/* <Particle /> */}
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -32,17 +33,17 @@ function About() {
             style={{ paddingTop: "20px", paddingBottom: "50px" }}
             className="about-img mb-3"
           >
-            <img style={{ aspectRatio: "3/2" }} src={programmer} alt="about" className="img-fluid" />
+            <Image style={{ aspectRatio: "3/2" }} src={programmer} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+        <h1 className="project-heading  justify-content-center d-flex ">
+          Professional <strong className="purple mx-2">Skillset </strong>
         </h1>
 
         <Techstack />
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+        <h1 className="project-heading justify-content-center d-flex  ">
+          <strong className="purple mx-2">Tools</strong> I use
         </h1>
         <Toolstack />
 
@@ -50,6 +51,6 @@ function About() {
       </Container>
     </Container>
   );
-}
+})
 
 export default About;
